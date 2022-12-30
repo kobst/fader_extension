@@ -1,0 +1,36 @@
+{
+    "short_name": "React App",
+    "version": "1.0",
+    "manifest_version": 3,
+    "name": "Fader Chrome History Manager",
+    "description": "A chrome extension designed to help users manage their history",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+      },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "http://*/*",
+          "https://*/*",
+          "<all_urls>"
+        ],
+        "js": [
+          "contentScript.js"
+        ]
+      }
+    ],
+    "permissions": [
+      "tabs",
+      "storage",
+      "history", 
+      "activeTab",
+      "runtime"
+    ]
+  }
+  
