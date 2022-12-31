@@ -8,7 +8,7 @@ const path = require('path');
 module.exports = {
   entry: {
     popup: './src/popup.jsx',
-    newtab: './src/newtab.jsx',
+    newtab: './src/newtab.js',
     background: './src/background.js',
     contentScript: './src/contentScript.js',
   },
