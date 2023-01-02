@@ -29,8 +29,7 @@
       "tabs",
       "storage",
       "history", 
-      "activeTab",
-      "runtime"
+      "activeTab"
     ]
   }
   
