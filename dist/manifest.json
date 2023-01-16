@@ -29,7 +29,8 @@
       "tabs",
       "storage",
       "history", 
-      "activeTab"
+      "activeTab",
+      "webNavigation"
     ]
   }
   
